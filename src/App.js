@@ -26,10 +26,10 @@ function App() {
     <div className="app-container bg-saiYellowBg">
       <BrowserRouter>
 
-        {/* Navbar should be inside the BrowserRouter */}
-        <Navbar />
-
         <div className="content">
+
+          {/* Navbar should be inside the BrowserRouter */}
+          <Navbar />
 
           <Routes>
             {/* A2. */}

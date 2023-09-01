@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import "../index.css"
 import saiLogo from "../media/saiLogo.png"
@@ -99,8 +99,8 @@ const Navbar = () => {
 
 
 
-                <div className="tabs justify-content-center d-none d-md-flex">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <div className="mb-2 tabs justify-content-center d-none d-md-flex">
+                    <ul>
                         <div className="d-flex">
                             <Link to='/'>
                                 <li>
