@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 html,
@@ -13,8 +12,25 @@ body {
   background-color: #fcefaf;
 }
 
+/* ------------------------ App.js -------------------- begin */
+
 .app-container {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling content container ( where routes go) */
+.content {
+  flex: 1;
+  /* This makes the content take up all available vertical space */
+}
+
+/* ------------------------ App.js -------------------- end */
+footer {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
 }
 
 /* ------------------------ WorkoutDetails.js -------------------- begin */

@@ -15,6 +15,7 @@ const Training = () => {
     }
 
 
+
     return (
         <div>
             <section className='training'>
@@ -100,6 +101,7 @@ const Training = () => {
                     <Link to='/signup' class="m-1 btn btn-lg btn-outline-danger ">Signup</Link>
                 </div>
             </div>
+
         </div >
     );
 }

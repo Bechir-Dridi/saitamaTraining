@@ -15,6 +15,7 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import AddWorkout from "./pages/AddWorkout";
 import Training from "./components/Training";
+import Footer from "./components/Footer";
 
 function App() {
   //A.Protect the Route
@@ -24,20 +25,28 @@ function App() {
     //I change the bg in index.css 
     <div className="app-container bg-saiYellowBg">
       <BrowserRouter>
+
         {/* Navbar should be inside the BrowserRouter */}
         <Navbar />
-        <Routes>
 
-          {/* A2. */}
-          <Route path="/" exact element={user ? <Home /> : <Navigate to="/training" />} />
-          <Route path="/training" element={!user ? <Training /> : null} />
-          <Route path="/add_workout" element={user ? <AddWorkout /> : <Navigate to="/login" />} />
-          <Route path="/signup" element={!user ? <Signup /> : <Navigate to="/" />} />
-          <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
-        </Routes>
+        <div className="content">
+
+          <Routes>
+            {/* A2. */}
+            <Route path="/" exact element={user ? <Home /> : <Navigate to="/training" />} />
+            <Route path="/training" element={!user ? <Training /> : null} />
+            <Route path="/add_workout" element={user ? <AddWorkout /> : <Navigate to="/login" />} />
+            <Route path="/signup" element={!user ? <Signup /> : <Navigate to="/" />} />
+            <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
+          </Routes>
+
+        </div>
+
       </BrowserRouter>
 
-    </div>
+      <Footer />
+
+    </div >
   );
 }
 
