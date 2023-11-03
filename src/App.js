@@ -3,7 +3,7 @@
 // twitter:   https://twitter.com/bechir7dridi
 // linkedin:  https://linkedin.com/in/bechir-dev/
 // github:    https://github.com/Bechir-Dridi
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import { HashRouter as Hrouter, Routes, Route, Navigate } from "react-router-dom"
 import { useAuthContext } from "./hooks/useAuthContext";
 import "./index.css"
 //import scss:
@@ -24,7 +24,7 @@ function App() {
   return (
     //I change the bg in index.css 
     <div className="app-container bg-saiYellowBg">
-      <BrowserRouter>
+      <Hrouter>
 
         <div className="content">
 
@@ -42,7 +42,7 @@ function App() {
 
         </div>
 
-      </BrowserRouter>
+      </Hrouter>
 
       <Footer />
 
