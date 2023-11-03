@@ -33,7 +33,7 @@ function App() {
 
           <Routes>
             {/* A2. */}
-            <Route path="/" element={user ? <Home /> : <Navigate to="/training" />} />
+            <Route path="/" exact element={user ? <Home /> : <Navigate to="/training" />} />
             <Route path="/training" element={!user ? <Training /> : <Navigate to="/" />} />
             <Route path="/add_workout" element={user ? <AddWorkout /> : <Navigate to="/login" />} />
             <Route path="/signup" element={!user ? <Signup /> : <Navigate to="/" />} />
