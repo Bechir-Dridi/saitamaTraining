@@ -34,10 +34,10 @@ function App() {
           <Routes>
             {/* A2. */}
             <Route path="/" exact element={user ? <Home /> : <Navigate to="/training" />} />
-            <Route path="/training" element={!user ? <Training /> : <Navigate to="/" />} />
-            <Route path="/add_workout" element={user ? <AddWorkout /> : <Navigate to="/login" />} />
-            <Route path="/signup" element={!user ? <Signup /> : <Navigate to="/" />} />
-            <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
+            <Route path="/training" exact element={!user ? <Training /> : <Navigate to="/" />} />
+            <Route path="/add_workout" exact element={user ? <AddWorkout /> : <Navigate to="/login" />} />
+            <Route path="/signup" exact element={!user ? <Signup /> : <Navigate to="/" />} />
+            <Route path="/login" exact element={!user ? <Login /> : <Navigate to="/" />} />
           </Routes>
 
         </div>
