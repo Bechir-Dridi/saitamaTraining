@@ -24,7 +24,7 @@ export default function Footer() {
                 <div className='mx-5 d-flex justify-content-around'>
                     <p className='text-secondary'>Developed by:</p>
                     <p className='mx-2 fw-bold text-center'>
-                        <a className='text-muted text-decoration-none text-center' href='https://bechirdev.netlify.app' target="_blank" rel="noreferrer">bechirdev.netlify.app</a>
+                        <a className='text-muted text-decoration-none text-center' href='https://bechirdev.vercel.app' target="_blank" rel="noreferrer">bechirdev.vercel.app</a>
                     </p>
                     <a className='border-outline-secondary text-decoration-none text-center' href="https://twitter.com/bechir7dridi" target="_blank" rel="noreferrer">
                         <img src={twitter} width="22px" alt="twitter" className="img-fluid" />
