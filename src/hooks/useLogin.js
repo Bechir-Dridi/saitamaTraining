@@ -11,8 +11,6 @@ export const useLogin = () => {
         setIsLoading(true)
         setError(null)
 
-        console.log("json:", email, password);
-
         const response = await fetch("https://saitama-server.onrender.com/api/user/login", {
             //I didn't mention localhost 3000 because in package.json,
             //I added this=>  "proxy": "http://localhost:4000",
